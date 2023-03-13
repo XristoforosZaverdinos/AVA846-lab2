@@ -1,0 +1,94 @@
+<html>
+
+<head>
+   <script src="aframe.js"></script>
+</head>
+
+<body>  
+    <a-scene>
+        <!-- plane-->
+        <a-plane 
+              position='0 0 0' 
+              rotation='-90 0 0' 
+              height='20' 
+              width='20' 
+              material='shader: flat; color:#2F4645; ' shadow='receive: true'
+              src="tile%20wave.jpg" >
+        </a-plane>
+         <!--top-->
+         <a-plane 
+              position='0 6 0' 
+              rotation='90 0 0' 
+              height='20' 
+              width='20' 
+              material='shader: flat; color: #8FDDEC; 'shadow='receive: true'
+              src="wood%20floor.jpg"  >
+        </a-plane>
+    
+        <a-sky color="#9CAFB3"></a-sky>
+        
+	    <!--wall front-->
+        <a-box 
+               position="0 3 -9.9"
+               color="#white"
+               width="20" 
+               height="7" 
+               depth="0.2"
+               
+               src="image_67361281.JPG" >
+        </a-box>
+         <!--wall back-->
+        <a-box 
+               position="0 3 9.9" 
+               color="#4BA3C9" 
+               width="20" 
+               height="7" 
+               depth="0.2"
+               src="brick%20image%20cartoon.png">
+        </a-box>
+        <!--wall right-->
+         <a-box
+               rotation="0 90 0"
+               position="9.9 3 0" 
+               color="#4BA3C9" 
+               width="20" 
+               height="7" 
+               depth="0.2"
+               src="brick%20image%20cartoon.png">
+        </a-box> 
+        <!--wall left-->
+         <a-box
+               rotation="0 90 0"
+               position="-9.9 3 0" 
+               color="#4BA3C9" 
+               width="20" 
+               height="7" 
+               depth="0.2"
+               src="brick%20image%20cartoon.png">
+        </a-box> 
+        <!--objects-->
+        <a-sphere 
+               position="3.5 1.25 -5" 
+               radius="1.25" 
+               color=""
+               src="metall_05_stainless_steel.jpg">
+            
+        </a-sphere>
+        <a-cylinder 
+               position="-3.5 1.25 -5" 
+               radius="2" 
+               height="1.5" 
+               color="#FFC65D"
+               src="tile%20wave.jpg">
+        </a-cylinder>
+        
+        <a-box
+               position="0 1. -1"
+               material="shader:standard" 
+               src="concrete.jpg" 
+               metalness:1;>
+               
+        </a-box>
+	</a-scene>
+</body>   
+</html>
